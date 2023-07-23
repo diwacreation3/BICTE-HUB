@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+
+/* Reset some default styles */
+:root {
+  --background-color: #0d0d0d;
+  --highlight-color: #242424;
+  --cards-background: #242424;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center all elements */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-color);
+}
+
+/* Header styles */
+header {
+  background-color: var(--highlight-color);
+  color: #fff;
+  padding: 0;
+  width: 90vw;
+  margin: 25px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.logo {
+  display: flex; /* Add this line to enable flex layout for the logo */
+  align-items: center; /* Add this line to align the items vertically within the flex container */
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.logo span {
+  margin-right: 10px; /* Add some spacing between the image and the text */
+}
+
+.about a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* Main styles */
+main {
+  display: flex;
+  flex-wrap: wrap; /* Add this line to wrap the cards in a row */
+  justify-content: center; /* Add this line to center the cards horizontally */
+  align-items: center; /* Add this line to center the cards vertically */
+  flex-direction: column;
+  margin: 15px auto; /* Add some margin between header and cards */
+}
+
+.intro {
+  text-align: center;
+  color: #fff;
+  font-family: "Instrument Serif", "Instrument Serif Placeholder", serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 100%;
+  margin: 45px;
+}
+
+.card-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 9px auto 30px auto;
+}
+
+.cards {
+  font-size: 17px;
+  width: 75vw;
+  height: 30vh;
+  color: #e9e9e9;
+  background-color: var(--cards-background);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.cards::before {
+  content: "";
+  position: absolute;
+  top: -1px; /* Adjust this value to change the top offset */
+  left: -1px; /* Adjust this value to change the left offset */
+  right: -1px; /* Adjust this value to change the right offset */
+  bottom: -1px; /* Adjust this value to change the bottom offset */
+  z-index: -1;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 183, 89, 0.5),
+    rgba(124, 167, 253, 0.5)
+  );
+  border-radius: inherit; /* Inherit the border-radius from the parent element */
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--highlight-color);
+  color: #fff;
+  padding: 10px 0;
+  height: 6vh;
+  width: 100%;
+}
+
+/* Links styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Add a media query for mobile devices with a maximum width of 767px */
+@media (max-width: 767px) {
+  body {
+    /* Adjust the header margin to create equal spacing around it in mobile view */
+    margin: 10px;
+  }
+
+  header {
+    /* Adjust the header margin and width to fit the mobile screen */
+    margin: 10px 9px;
+    width: 87vw;
+  }
+}
