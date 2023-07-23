@@ -131,7 +131,9 @@ footer {
   color: #fff;
   padding: 10px 0;
   height: 6vh;
-  width: 100%;
+  width: 90vw;
+  margin: 25px;
+  border-radius: 10px;
 }
 
 /* Links styles */
@@ -152,8 +154,8 @@ a:hover {
     margin: 10px;
   }
 
-  header {
-    /* Adjust the header margin and width to fit the mobile screen */
+  header,
+  footer {
     margin: 10px 9px;
     width: 87vw;
   }
