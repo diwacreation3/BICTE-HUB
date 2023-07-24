@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 
-/* Reset some default styles */
 :root {
   --background-color: #0d0d0d;
   --highlight-color: #242424;
   --cards-background: #242424;
 }
 
+/* Reset some default styles */
 body,
 html {
   margin: 0;
@@ -46,15 +46,15 @@ header {
 }
 
 .logo {
-  display: flex; /* Add this line to enable flex layout for the logo */
-  align-items: center; /* Add this line to align the items vertically within the flex container */
+  display: flex;
+  align-items: center;
   font-size: 24px;
   font-weight: bold;
   padding: 10px 20px;
 }
 
 .logo span {
-  margin-right: 10px; /* Add some spacing between the image and the text */
+  margin-right: 10px;
 }
 
 .about a {
@@ -66,11 +66,11 @@ header {
 /* Main styles */
 main {
   display: flex;
-  flex-wrap: wrap; /* Add this line to wrap the cards in a row */
-  justify-content: center; /* Add this line to center the cards horizontally */
-  align-items: center; /* Add this line to center the cards vertically */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin: 15px auto; /* Add some margin between header and cards */
+  margin: 15px auto;
 }
 
 .intro {
@@ -90,7 +90,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 9px auto 30px auto;
+  margin: 9px auto 10px auto;
 }
 
 .cards {
@@ -100,29 +100,38 @@ main {
   color: #e9e9e9;
   background-color: var(--cards-background);
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 5px 20px;
   margin: 10px;
   max-width: 300px;
   text-align: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cards::before {
   content: "";
   position: absolute;
-  top: -1px; /* Adjust this value to change the top offset */
-  left: -1px; /* Adjust this value to change the left offset */
-  right: -1px; /* Adjust this value to change the right offset */
-  bottom: -1px; /* Adjust this value to change the bottom offset */
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
   z-index: -1;
   background-image: linear-gradient(
     to right,
     rgba(255, 183, 89, 0.5),
     rgba(124, 167, 253, 0.5)
   );
-  border-radius: inherit; /* Inherit the border-radius from the parent element */
+  border-radius: inherit;
 }
 
+.cards img {
+  height: 150px;
+  width: 150px;
+  margin: 0px 0px 15px 0px;
+}
 /* Footer styles */
 footer {
   display: flex;
