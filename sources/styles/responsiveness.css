@@ -1,0 +1,13 @@
+/* Add a media query for mobile devices with a maximum width of 767px */
+@media (max-width: 767px) {
+  body {
+    /* Adjust the header margin to create equal spacing around it in mobile view */
+    margin: 10px;
+  }
+
+  header,
+  footer {
+    margin: 10px 9px;
+    width: 87vw;
+  }
+}
