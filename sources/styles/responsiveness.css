@@ -1,8 +1,23 @@
 /* Add a media query for mobile devices with a maximum width of 767px */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   header,
   footer {
     margin: 10px 10px;
     width: 90vw;
+  }
+
+  .subject-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .modal {
+    padding: 50% 0px 0px 0px;
+  }
+  .modal-content {
+    width: 75%; /* Adjust the width for mobile view */
   }
 }

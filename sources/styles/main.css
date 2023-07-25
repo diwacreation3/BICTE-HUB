@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 
 :root {
-  --background-color: #0d0d0d;
+  --background-color: #0f0f0f;
   --highlight-color: #242424;
   --cards-background: #242424;
   --border-color: #495057;
 }
 
+* {
+  text-decoration: none;
+  user-select: none;
+}
 /* Reset some default styles */
 body,
 html {
@@ -139,10 +143,6 @@ main {
   transition: all 0.5s ease;
 }
 
-.cards:hover {
-  transform: translateY(-10px);
-  background-color: #353535;
-}
 .cards img {
   height: 150px;
   width: 150px;
@@ -159,6 +159,7 @@ main {
 .description svg {
   margin: 0px 5px 1px 0px;
 }
+
 /* Footer styles */
 footer {
   display: flex;
@@ -172,4 +173,114 @@ footer {
   margin: 25px;
   border-radius: 10px;
   border: 1px solid #495057;
+}
+
+.semester-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.semester-section .cards {
+  font-size: 17px;
+  width: 75vw;
+  height: 30vh;
+  color: #e9e9e9;
+  background-color: var(--cards-background);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 250px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.cards:hover {
+  transform: translateY(-10px);
+  background-color: #353535;
+}
+
+.subject-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px 0px 25px 0px;
+}
+
+.subject-cards {
+  font-size: 17px;
+  width: 75vw;
+  height: 10vh;
+  color: #e9e9e9;
+  background-color: var(--cards-background);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin: 10px;
+  max-width: 275px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.subject-cards:hover {
+  background-color: #353535;
+}
+.semester-icon img {
+  height: 100px;
+  width: 100px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 4% 0 0 0;
+}
+
+.modal-content {
+  text-align: center;
+  background-color: var(--highlight-color);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  width: 50%;
+  color: #fff;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
