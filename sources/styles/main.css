@@ -107,14 +107,18 @@ main {
   text-align: center;
   color: #fff;
   font-family: "Instrument Serif", "Instrument Serif Placeholder", serif;
-  font-size: 75px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -1px;
   line-height: 100%;
-  margin: 25px 45px 45px 45px;
+  margin: 25px 45px 25px 45px;
 }
 
+.intro p {
+  margin: 20px 0px 0px 0px;
+  font-size: 45px;
+}
 .card-collection {
   display: flex;
   flex-wrap: wrap;

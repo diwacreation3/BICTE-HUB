@@ -17,4 +17,12 @@
   .modal-content {
     width: 75%;
   }
+
+  .intro {
+    font-size: 40px;
+  }
+
+  .intro p {
+    font-size: 30px;
+  }
 }
