@@ -12,7 +12,7 @@
   text-decoration: none;
   user-select: none;
 }
-/* Reset some default styles */
+
 body,
 html {
   margin: 0;
@@ -20,7 +20,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Center all elements */
 body {
   display: flex;
   align-items: center;
