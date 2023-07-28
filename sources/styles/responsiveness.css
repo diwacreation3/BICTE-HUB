@@ -25,4 +25,36 @@
   .intro p {
     font-size: 30px;
   }
+
+  .card-collection p {
+    font-size: 25px;
+  }
+
+  .logo a {
+    font-size: 25px;
+  }
+
+  .bar .about {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+
+  .cards {
+    margin-bottom: 10px;
+  }
+  .cards p {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .semester-icon {
+    margin: 0;
+  }
+
+  .subject-cards {
+    font-size: 20px;
+  }
 }
