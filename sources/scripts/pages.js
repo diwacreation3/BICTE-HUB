@@ -2,7 +2,7 @@
 const firstSem = document.getElementById('semF');
 const secondSem = document.getElementById('semS');
 const thirdSem = document.getElementById('semT');
-const fourthSem = document.getElementById('semFo'); // Note: this ID is duplicated, consider changing it to 'semFo' or similar
+const fourthSem = document.getElementById('semFo');
 const fifthSem = document.getElementById('semFi');
 const sixthSem = document.getElementById('semSi');
 const seventhSem = document.getElementById('semSev');
@@ -22,24 +22,31 @@ const eighthURL = 'pages/sem8.html';
 firstSem.addEventListener('click', () => {
   window.location.href = firstURL;
 });
+
 secondSem.addEventListener('click', () => {
   window.location.href = secondURL;
 });
+
 thirdSem.addEventListener('click', () => {
   window.location.href = thirdURL;
 });
+
 fourthSem.addEventListener('click', () => {
   window.location.href = fourthURL;
 });
+
 fifthSem.addEventListener('click', () => {
   window.location.href = fifthURL;
 });
+
 sixthSem.addEventListener('click', () => {
   window.location.href = sixthURL;
 });
+
 seventhSem.addEventListener('click', () => {
   window.location.href = seventhURL;
 });
+
 eighthSem.addEventListener('click', () => {
   window.location.href = eighthURL;
 });
