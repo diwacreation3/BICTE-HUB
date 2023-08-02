@@ -124,6 +124,21 @@ main {
   flex-wrap: wrap;
 }
 
+#recommend {
+  background: linear-gradient(#242424, #242424) padding-box,
+    linear-gradient(to right, rgba(255, 183, 89, 0.5), rgba(255, 0, 212, 0.5))
+      border-box;
+  border: 1px solid transparent;
+}
+
+#recommend p {
+  margin-top: 25px;
+}
+
+#recommend:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 #questions p,
 #notes p {
   margin-top: 27px;
