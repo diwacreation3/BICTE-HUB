@@ -21,17 +21,16 @@ body {
   flex-direction: column;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  background-color: #0f0f0f;
+  background-color: #121212;
   min-height: 100vh;
-  color: #fff;
+  color: #e0e0e0;
 }
 
 /* Header styles */
 header {
   width: 100%;
   padding: 20px;
-  background-color: #242424;
-  color: #fff;
+  background-color: #212121;
   text-align: center;
 }
 
@@ -50,7 +49,6 @@ header {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
   font-size: 30px;
 }
 
@@ -113,7 +111,7 @@ main {
   padding: 20px;
   border: 1px solid #353535;
   border-radius: 8px;
-  background-color: #242424;
+  background-color: #212121;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -145,7 +143,7 @@ main {
 }
 
 .card:hover {
-  background-color: #353535;
+  background-color: #424242;
 }
 
 .about-desc {
@@ -159,7 +157,7 @@ main {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #e0e0e0;
 }
 
 .syllabus-cards,
@@ -178,7 +176,7 @@ a {
   height: 225px;
   border: 1px solid #353535;
   border-radius: 8px;
-  background-color: #242424;
+  background-color: #212121;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -193,7 +191,7 @@ a {
   margin-top: 25px;
 }
 .sCard:hover {
-  background-color: #353535;
+  background-color: #424242;
 }
 
 .cCard {
@@ -203,7 +201,7 @@ a {
   padding: 20px;
   border: 1px solid #353535;
   border-radius: 8px;
-  background-color: #242424;
+  background-color: #212121;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -212,11 +210,15 @@ a {
   align-items: center;
 }
 
+.cCard:hover {
+  background-color: #424242;
+}
+
 /* Footer styles */
 footer {
   width: 100%;
   padding: 20px;
-  background-color: #242424;
-  color: #fff;
+  background-color: #212121;
+  color: #e0e0e0;
   text-align: center;
 }
